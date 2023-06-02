@@ -1,0 +1,34 @@
+// pallete
+$white: #FFFFFF;
+$black: #000000;
+$blue-light: #B2EAFF;
+$cyan: #71D8FF;
+$darkcyan: #00AEEF;
+$blue: #0089BC;
+$blue-stell: #005271;
+$blue-teal: #033244;
+$white-smoke: #E2F7FF;
+$gray: #E1E1E1;
+$light: #EBEBEB;
+$gray-light: #D6D6D6;
+$gray-shadow: #676767;
+$gray-dark: #283137;
+$dark: #2C3A2F;
+$night: #101912;
+
+// Medias
+$breakpoint-mobile: 456px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+@mixin tablet {
+    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$breakpoint-desktop}) {
+        @content;
+    }
+}
